@@ -1,0 +1,304 @@
+@use '../abstracts' as *;
+
+/// HERO ///
+.hero {
+  background-color: $very-pale-cyan;
+  background-image: url('../images/bg-hero-mobile.svg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding: rem(24) 0;
+  
+  @include breakpoint-up('large') {
+    background-image: url('../images/bg-hero-desktop.svg');
+    padding-top: rem(48);
+  }
+  
+  &__logo {
+    height: rem(16);
+    
+    @include breakpoint-up('large') {
+      height: rem(32);
+    }
+  }
+  
+  &__mini-cta {
+    border-radius: 2em;
+    box-shadow: 0 rem(2) rem(8) rgba($very-dark-cyan, 0.1);
+    background-color: $white;
+    padding: rem(6) rem(20);
+    color: $very-dark-cyan;
+    font-size: rem(10);
+    font-weight: 700;
+    
+    @include breakpoint-up('large') {
+      padding: rem(16) rem(60);
+      font-size: rem(15);
+    }
+  }
+  
+  &__content {
+    margin-top: rem(50);
+    padding: rem(10);
+    text-align: center;
+    
+    @include breakpoint-up('large') {
+      display: grid;
+      grid-template-columns: 40% 55%;
+      justify-content: space-between;
+      align-items: center;
+      text-align: left;
+    }
+  }
+  
+  &__text-cta {
+    margin-bottom: rem(40);
+  }
+  
+  &__title {
+    font-size: rem(24);
+    
+    @include breakpoint-up('small') {
+      font-size: rem(36);
+    }
+    
+    @include breakpoint-up('large') {
+      font-size: rem(60);
+    }
+  }
+  
+  &__description {
+    font-size: rem(16);
+    
+    @include breakpoint-up('large') {
+      margin: rem(18) 0;
+      max-width: 100%;
+      font-size: rem(26);
+    }
+  }
+}
+
+/// FEATURES ///
+.features {
+  padding: rem(50) 0;
+  
+  @include breakpoint-up('large') {
+    padding-top: rem(200);
+  }
+  
+  &__text {
+    text-align: center;
+    
+    @include breakpoint-up('large') {
+      text-align: left;
+    }
+  }
+  
+  &__title {
+    color: $very-dark-cyan;
+    font-size: rem(20);
+    
+    @include breakpoint-up('large') {
+      font-size: rem(28);
+    }
+  }
+  
+  &__description {
+    color: $grayish-blue;
+    font-size: rem(13);
+    
+    @include breakpoint-up('large') {
+      font-size: rem(18);
+    }
+  }
+}
+
+.features .container {
+  padding: 0 rem(20);
+  
+  @include breakpoint-up('large') {
+    padding: 0 rem(100);
+  }
+}
+
+.features  .card:nth-child(2) .card__content {
+  
+  @include breakpoint-up('large') {
+    flex-direction: row-reverse;
+  }
+}
+
+/// COMMUNITY ///
+.community {
+  position: relative;
+  top: rem(60);
+  margin-top: rem(15);
+  
+  @include breakpoint-up('large') {
+    top: rem(120);
+  }
+  
+  &__title {
+    color: $very-dark-cyan;
+    font-size: rem(18);
+    
+    @include breakpoint-up('large') {
+      margin-bottom: rem(30);
+      font-size: rem(50);
+    }
+  }
+  
+  &__btn {
+    margin: rem(10) 0;
+    
+    @include breakpoint-up('large') {
+      padding: rem(30) rem(90);
+      font-size: rem(19);
+    }
+  }
+}
+
+.community .container {
+  max-width: rem(1000);
+  text-align: center;
+}
+
+.community .card {
+  padding: rem(18) rem(10);
+  
+  @include breakpoint-up('large') {
+    padding: rem(45);
+  }
+}
+
+/// FOOTER ///
+.footer {
+  background-color: $very-dark-cyan;
+  padding-top: rem(120);
+  padding-bottom: rem(36);
+  overflow: hidden;
+  color: $white;
+
+  @include breakpoint-up('large') {
+    padding-bottom: rem(40);
+  }
+  
+  &__grid {
+    
+    @include breakpoint-up('large') {
+      display: grid;
+      align-items: start;
+      grid-template-columns: 1.25fr 2fr 1fr;
+      margin-top: rem(40);
+    }
+  }
+  
+  &__logo {
+    height: rem(28);
+    
+    @include breakpoint-up('large') {
+      margin-top: rem(100);
+      height: rem(40);
+    }
+  }
+  
+  &__list {
+    margin: rem(60) 0;
+    
+    @include breakpoint-up('large') {
+      justify-self: center;
+      column-count: 2;
+      column-gap: rem(60);
+      margin: 0;
+    }
+  }
+  
+  &__item {
+    line-height: 2.5;
+  }
+  
+  &__link {
+    color: inherit;
+    
+    @include on-event {
+      border-bottom: rem(1) solid white;
+    }
+  }
+  
+  &__copyright {
+    margin-top: rem(20);
+    text-align: center;
+    font-size: rem(12);
+    
+    @include breakpoint-up('large') {
+      text-align: right;
+      font-size: rem(18);
+    }
+  }
+}
+
+.footer .container {
+  
+  @include breakpoint-up('large') {
+    padding: 0 rem(100);
+  }
+}
+
+.info {
+  
+  &__item {
+    align-items: center;
+    gap: rem(30);
+    margin-top: rem(30);
+    font-size: rem(15.5);
+    
+    @include breakpoint-up('large') {
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+  }
+  
+  /**
+  * 1. Added margin-top to make the location icon align correctly.
+  */
+  &__item:first-child .info__icon {
+    align-self: flex-start;
+    margin-top: rem(10); /* 1 */
+  }
+  
+  &__description {
+    max-width: rem(300);
+    color: inherit;
+  }
+} 
+
+.social {
+  display: flex;
+  justify-content: center;
+  gap: rem(16);
+  margin-top: rem(50);
+  
+  @include breakpoint-up('large') {
+    margin-top: 0;
+  }
+  
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: rem(1) solid currentColor;
+    border-radius: 50%;
+    cursor: pointer;
+    height: rem(36);
+    width: rem(36);
+    transition: all 150ms linear;
+    
+    @include on-event {
+      color: $pink;
+    }
+  }
+  
+  &__link {
+    color: inherit;
+  }
+}

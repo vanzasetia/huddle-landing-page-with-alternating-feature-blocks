@@ -1,0 +1,37 @@
+@use '../abstracts' as *;
+
+*, *::after, *::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: rem(18);
+}
+
+@for $i from 1 through 6 {
+  h#{$i} {
+    margin: rem(10) 0;
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+  }
+}
+
+p {
+  margin: rem(10) 0;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}

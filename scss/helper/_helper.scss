@@ -1,0 +1,29 @@
+@use '../abstracts' as *;
+
+/// CONTAINER ///
+.container {
+  margin: 0 auto;
+  padding: 0 rem(16);
+  max-width: rem(1440);
+  
+  @include breakpoint-up('large') {
+    padding: 0 rem(85);
+  }
+}
+
+/// FLEX ///
+.flex {
+  display: flex;
+  
+  &--spb {
+    justify-content: space-between;
+  }
+  
+  &--aic {
+    align-items: center;
+  }
+  
+  &--jcfe {
+    justify-content: flex-end;
+  }
+}

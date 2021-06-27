@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <!-- Dev Tool For Android -->
+    <script src="//cdn.jsdelivr.net/npm/eruda"></script>
+    <script>
+      eruda.init()
+    </script>
+    <!-- Poppins and Open Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Favicons -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>
+      Frontend Mentor | Huddle landing page with alternating feature
+      blocks
+    </title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="hero">
+      <!-- Container -->
+      <div class="container">
+        <!-- Navigation -->
+        <nav class="hero__nav flex flex--spb flex--aic">
+          <img
+            src="./images/logo.svg"
+            alt="Huddle. Company logo."
+            class="hero__logo"
+          />
+          <a href="#" class="btn hero__mini-cta">Try It Free</a>
+        </nav>
+        <!-- End of Navigation -->
+        <!-- Content -->
+        <div class="hero__content">
+          <!-- Text and CTA -->
+          <div class="hero__text-cta">
+            <h1 class="hero__title">
+              Build The Community Your Fans Will Love
+            </h1>
+            <p class="hero__description">
+              Huddle re-imagines the way we build communities. You
+              have a voice, but so does your audience. Create
+              connections with your users as you engage in genuine
+              discussion.
+            </p>
+            <a href="#" class="btn btn--cta">Get Started For Free</a>
+          </div>
+          <!-- End of Text and CTA -->
+          <!-- Mockup -->
+          <img
+            src="./images/illustration-mockups.svg"
+            alt="Illustration"
+            class="hero__mockup"
+          />
+          <!-- End of Mockup -->
+        </div>
+        <!-- End of Content -->
+      </div>
+      <!-- End of Container -->
+    </header>
+    <!-- End of Header -->
+
+    <!-- Features -->
+    <section class="features">
+      <!-- Container -->
+      <div class="container">
+        <!-- Card -->
+        <div class="card">
+          <!-- Content -->
+          <div class="card__content">
+            <!-- Text -->
+            <div class="features__text">
+              <h2 class="features__title">Grow Together</h2>
+              <p class="features__description">
+                Generate meaningful discussions with your audience and
+                build a strong, loyal community. Think of the
+                insightful conversations you miss out on with a
+                feedback form.
+              </p>
+            </div>
+            <!-- End of Text -->
+            <img
+              src="./images/illustration-grow-together.svg"
+              alt="A man and a woman discussing something. Illustration."
+              class="features__image"
+            />
+          </div>
+          <!-- End of Content -->
+        </div>
+        <!-- End of Card -->
+
+        <!-- Card -->
+        <div class="card">
+          <!-- Content -->
+          <div class="card__content">
+            <!-- Text -->
+            <div class="features__text">
+              <h2 class="features__title">Flowing Conversations</h2>
+              <p class="features__description">
+                You wouldn't paginate a conversation in real life, so
+                why do it online? Our threads have just-in-time
+                loading for a more natural flow.
+              </p>
+            </div>
+            <!-- End of Text -->
+            <img
+              src="./images/illustration-flowing-conversation.svg"
+              alt="Four men sitting together discussing something. Illustration."
+              class="features__image"
+            />
+          </div>
+          <!-- End of Content -->
+        </div>
+        <!-- End of Card -->
+
+        <!-- Card -->
+        <div class="card">
+          <!-- Content -->
+          <div class="card__content">
+            <!-- Text -->
+            <div class="features__text">
+              <h2 class="features__title">Your Users</h2>
+              <p class="features__description">
+                It takes no time at all to integrate Huddle with your
+                app's authentication solution. This means, once signed
+                in to your app, your users can start chatting
+                immediately.
+              </p>
+            </div>
+            <!-- End of Text -->
+            <img
+              src="./images/illustration-your-users.svg"
+              alt="Three customers start chatting. Illustration."
+              class="features__image"
+            />
+          </div>
+          <!-- End of Content -->
+        </div>
+        <!-- End of Card -->
+      </div>
+      <!-- End of Container -->
+    </section>
+    <!-- End of Features -->
+
+    <!-- Community -->
+    <section class="community">
+      <!-- Container -->
+      <div class="container">
+        <!-- Card -->
+        <div class="card">
+          <h2 class="community__title">
+            Ready To Build Your Community?
+          </h2>
+          <a href="#" class="btn btn--cta community__btn"
+            >Get Started For Free</a
+          >
+        </div>
+        <!-- End of Card -->
+      </div>
+      <!-- End of Container -->
+    </section>
+    <!-- End of Community -->
+
+    <!-- Footer -->
+    <footer class="footer">
+      <!-- Container -->
+      <div class="container">
+        <img
+          src="./images/logo-light.svg"
+          alt="Huddle. Company logo."
+          class="footer__logo"
+        />
+        <!-- Grid -->
+        <div class="footer__grid">
+          <!-- Content -->
+          <div class="footer__content">
+            <!-- Info -->
+            <ul class="footer__info info">
+              <!-- Single Item -->
+              <li class="info__item flex">
+                <img
+                  src="./images/icon-location.svg"
+                  alt="Location. Symbol."
+                  class="info__icon"
+                />
+                <p class="info__description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing
+                  elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore magna aliqua
+                </p>
+              </li>
+              <!-- End of Single Item -->
+              <!-- Single Item -->
+              <li class="info__item flex">
+                <img
+                  src="./images/icon-phone.svg"
+                  alt="Phone. Symbol."
+                  class="info__icon"
+                />
+                <a class="info__description" href="tel:+15431234567">
+                  +1-543-123-4567
+                </a>
+              </li>
+              <!-- End of Single Item -->
+              <!-- Single Item -->
+              <li class="info__item flex">
+                <img
+                  src="./images/icon-email.svg"
+                  alt="Email. Symbol."
+                  class="info__icon"
+                />
+                <p class="info__description">example@huddle.com</p>
+              </li>
+              <!-- End of Single Item -->
+            </ul>
+            <!-- End of Info -->
+          </div>
+          <!-- End of Content -->
+
+          <!-- List -->
+          <ul class="footer__list">
+            <!-- Single Item -->
+            <li class="footer__item">
+              <a href="#" class="footer__link"> About Us </a>
+            </li>
+            <!-- End of Single Item -->
+            <!-- Single Item -->
+            <li class="footer__item">
+              <a href="#" class="footer__link"> What We Do </a>
+            </li>
+            <!-- End of Single Item -->
+            <!-- Single Item -->
+            <li class="footer__item">
+              <a href="#" class="footer__link"> FAQ </a>
+            </li>
+            <!-- End of Single Item -->
+            <!-- Single Item -->
+            <li class="footer__item">
+              <a href="#" class="footer__link"> Career </a>
+            </li>
+            <!-- End of Single Item -->
+            <!-- Single Item -->
+            <li class="footer__item">
+              <a href="#" class="footer__link"> Blog </a>
+            </li>
+            <!-- End of Single Item -->
+            <!-- Single Item -->
+            <li class="footer__item">
+              <a href="#" class="footer__link"> Contact Us </a>
+            </li>
+            <!-- End of Single Item -->
+          </ul>
+          <!-- End of List -->
+
+          <!-- Social -->
+          <ul class="footer__social social">
+            <!-- Single Item -->
+            <li class="social__item">
+              <a
+                href="https://www.facebook.com"
+                target="_blank"
+                class="social__link"
+              >
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+            <!-- End of Single Item -->
+            <!-- Single Item -->
+            <li class="social__item">
+              <a
+                href="https://www.twitter.com"
+                target="_blank"
+                class="social__link"
+              >
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <!-- End of Single Item -->
+            <!-- Single Item -->
+            <li class="social__item">
+              <a
+                href="https://www.instagram.com"
+                target="_blank"
+                class="social__link"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+            <!-- End of Single Item -->
+          </ul>
+          <!-- End of Social -->
+        </div>
+        <!-- End of Grid -->
+        <!-- Copyright -->
+        <div class="footer__copyright copyright">
+          <p class="copyright__text">
+            &copy; Copyright 2018 Huddle. All rights reserved.
+          </p>
+        </div>
+        <!-- End of Copyright -->
+      </div>
+      <!-- End of Container -->
+    </footer>
+    <!-- End of Footer -->
+  </body>
+</html>

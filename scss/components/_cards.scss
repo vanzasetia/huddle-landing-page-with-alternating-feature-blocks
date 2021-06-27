@@ -1,0 +1,45 @@
+@use '../abstracts' as *;
+
+.card {
+  padding: rem(40);
+  border-radius: 0.8em;
+  box-shadow: 0 0 rem(8) rgba($very-dark-cyan, 0.1);
+  background-color: $white;
+  
+  @include breakpoint-up('large') {
+    margin: 0;
+    padding: rem(60) rem(40);
+    padding-left: rem(100);
+    max-width: 100%;
+  }
+  
+  &:not(:last-child) {
+    margin-bottom: rem(40);
+  }
+}
+
+.card__content {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: rem(30);
+  
+  @supports not (gap: rem(30)) {
+    & > .features__text:first-child {
+      margin-top: rem(30);
+    }
+  }
+  
+  @include breakpoint-up('large') {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+    & > *:first-child {
+      width: rem(500);
+    }
+    
+    & > *:last-child {
+      width: rem(400);
+    }
+  }
+}

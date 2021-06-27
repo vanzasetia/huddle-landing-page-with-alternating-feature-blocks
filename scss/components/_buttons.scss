@@ -1,0 +1,45 @@
+@use '../abstracts' as *;
+
+.btn {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  overflow: hidden;
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: transparent;
+    transition: all 250ms ease-in-out;
+  }
+  
+  &--cta {
+    margin: rem(24) 0;
+    border-radius: 5em;
+    box-shadow: rem(2) rem(2) rem(5) rgba($very-dark-cyan, 0.1);
+    background-color: $pink;
+    padding: rem(12) rem(55);
+    color: $white;
+    font-size: rem(12);
+    
+    @include breakpoint-up('large') {
+      padding: rem(18) rem(65);
+      font-size: rem(14);
+    }
+  }
+  
+  @include on-event {
+    outline: none;
+    
+    &::before {
+      background-color: rgba($white, 0.5);
+    }
+  }
+}
