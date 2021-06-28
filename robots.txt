@@ -1,0 +1,15 @@
+User-agent: Baiduspider
+Disallow: /
+Noindex: /
+
+User-agent: *
+Disallow: /scss/
+Disallow: /.git/
+Disallow: /design/
+Disallow: /*.md$
+
+# This instructs Bing not to crawl our site.
+User-agent: Bingbot
+Disallow: /
+
+Sitemap: https://huddle-landing-page-with-alternating-feature-blocks-vs.netlify.app/sitemap.xml
