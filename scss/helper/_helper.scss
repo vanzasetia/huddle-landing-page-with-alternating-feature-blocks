@@ -4,10 +4,14 @@
 .container {
   margin: 0 auto;
   padding: 0 rem(16);
-  max-width: rem(1440);
+  
+  @include breakpoint-up('small') {
+    max-width: rem(640);
+  }
   
   @include breakpoint-up('large') {
     padding: 0 rem(85);
+    max-width: rem(1440);
   }
 }
 

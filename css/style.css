@@ -404,11 +404,16 @@ img {
 .container {
   margin: 0 auto;
   padding: 0 1rem;
-  max-width: 90rem;
+}
+@media screen and (min-width: 25em) {
+  .container {
+    max-width: 40rem;
+  }
 }
 @media screen and (min-width: 81.25em) {
   .container {
     padding: 0 5.3125rem;
+    max-width: 90rem;
   }
 }
 
@@ -515,14 +520,23 @@ img {
   background-size: 100%;
   padding: 1.5rem 0;
 }
-@media screen and (min-width: 81.25em) {
+@media screen and (min-width: 62.5em) {
   .hero {
     background-image: url("../images/bg-hero-desktop.svg");
+  }
+}
+@media screen and (min-width: 81.25em) {
+  .hero {
     padding-top: 3rem;
   }
 }
 .hero__logo {
   height: 1rem;
+}
+@media screen and (min-width: 25em) {
+  .hero__logo {
+    height: 1.5rem;
+  }
 }
 @media screen and (min-width: 81.25em) {
   .hero__logo {
@@ -537,6 +551,12 @@ img {
   color: #00252e;
   font-size: 0.625rem;
   font-weight: 700;
+}
+@media screen and (min-width: 25em) {
+  .hero__mini-cta {
+    padding: 0.625rem 1.625rem;
+    font-size: 0.75rem;
+  }
 }
 @media screen and (min-width: 81.25em) {
   .hero__mini-cta {
@@ -566,12 +586,7 @@ img {
 }
 @media screen and (min-width: 25em) {
   .hero__title {
-    font-size: 2.25rem;
-  }
-}
-@media screen and (min-width: 81.25em) {
-  .hero__title {
-    font-size: 3.75rem;
+    font-size: 2.8125rem;
   }
 }
 .hero__description {
@@ -581,7 +596,7 @@ img {
   .hero__description {
     margin: 1.125rem 0;
     max-width: 100%;
-    font-size: 1.625rem;
+    font-size: 1.125rem;
   }
 }
 
@@ -652,7 +667,7 @@ img {
 @media screen and (min-width: 81.25em) {
   .community__title {
     margin-bottom: 1.875rem;
-    font-size: 3.125rem;
+    font-size: 1.875rem;
   }
 }
 .community__btn {
@@ -666,8 +681,12 @@ img {
 }
 
 .community .container {
-  max-width: 62.5rem;
   text-align: center;
+}
+@media screen and (min-width: 81.25em) {
+  .community .container {
+    max-width: 62.5rem;
+  }
 }
 
 .community .card {
@@ -715,7 +734,7 @@ img {
   .footer__list {
     justify-self: center;
     column-count: 2;
-    column-gap: 3.75rem;
+    column-gap: 7.5rem;
     margin: 0;
   }
 }

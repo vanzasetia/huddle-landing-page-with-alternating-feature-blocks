@@ -8,13 +8,20 @@
   background-size: 100%;
   padding: rem(24) 0;
   
-  @include breakpoint-up('large') {
+  @include breakpoint-up('medium') {
     background-image: url('../images/bg-hero-desktop.svg');
+  }
+  
+  @include breakpoint-up('large') {
     padding-top: rem(48);
   }
   
   &__logo {
     height: rem(16);
+    
+    @include breakpoint-up('small') {
+      height: rem(24);
+    }
     
     @include breakpoint-up('large') {
       height: rem(32);
@@ -29,6 +36,11 @@
     color: $very-dark-cyan;
     font-size: rem(10);
     font-weight: 700;
+    
+    @include breakpoint-up('small') {
+      padding: rem(10) rem(26);
+      font-size: rem(12);
+    }
     
     @include breakpoint-up('large') {
       padding: rem(16) rem(60);
@@ -58,11 +70,7 @@
     font-size: rem(24);
     
     @include breakpoint-up('small') {
-      font-size: rem(36);
-    }
-    
-    @include breakpoint-up('large') {
-      font-size: rem(60);
+      font-size: rem(45);
     }
   }
   
@@ -72,7 +80,7 @@
     @include breakpoint-up('large') {
       margin: rem(18) 0;
       max-width: 100%;
-      font-size: rem(26);
+      font-size: rem(18);
     }
   }
 }
@@ -143,7 +151,7 @@
     
     @include breakpoint-up('large') {
       margin-bottom: rem(30);
-      font-size: rem(50);
+      font-size: rem(30);
     }
   }
   
@@ -158,8 +166,11 @@
 }
 
 .community .container {
-  max-width: rem(1000);
   text-align: center;
+  
+  @include breakpoint-up('large') {
+    max-width: rem(1000);
+  }
 }
 
 .community .card {
@@ -207,7 +218,7 @@
     @include breakpoint-up('large') {
       justify-self: center;
       column-count: 2;
-      column-gap: rem(60);
+      column-gap: rem(120);
       margin: 0;
     }
   }
