@@ -8,8 +8,8 @@ computer or laptop ☺️.
 
 ## Feedback and Live Review
 
-Feel free to give [feedback]() to me on Frontend Mentor and here is
-[live review]()
+Feel free to give [feedback](https://www.frontendmentor.io/solutions/huddle-landing-page-feature-block-html5-css3-sass-Wq2itHf5d) to me on Frontend Mentor and here is
+[live review](https://huddle-landing-page-with-alternating-feature-blocks-vs.netlify.app/)
 
 ## Tools
 
